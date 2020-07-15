@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		8372CFBC24BF04A800F070C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372CFBB24BF04A800F070C9 /* AppDelegate.swift */; };
 		8372CFBE24BF04A800F070C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372CFBD24BF04A800F070C9 /* SceneDelegate.swift */; };
-		8372CFC024BF04A800F070C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372CFBF24BF04A800F070C9 /* ViewController.swift */; };
-		8372CFC324BF04A800F070C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8372CFC124BF04A800F070C9 /* Main.storyboard */; };
+		8372CFC324BF04A800F070C9 /* Compass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8372CFC124BF04A800F070C9 /* Compass.storyboard */; };
 		8372CFC524BF04A900F070C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8372CFC424BF04A900F070C9 /* Assets.xcassets */; };
 		8372CFC824BF04A900F070C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8372CFC624BF04A900F070C9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +18,7 @@
 		8372CFB824BF04A800F070C9 /* Compass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8372CFBB24BF04A800F070C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8372CFBD24BF04A800F070C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8372CFBF24BF04A800F070C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8372CFC224BF04A800F070C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8372CFC224BF04A800F070C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Compass.storyboard; sourceTree = "<group>"; };
 		8372CFC424BF04A900F070C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8372CFC724BF04A900F070C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8372CFC924BF04A900F070C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +35,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BE1D0A624BF50B0009E2444 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8372CFC124BF04A800F070C9 /* Compass.storyboard */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		1BE1D0A724BF50BC009E2444 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8372CFC624BF04A900F070C9 /* LaunchScreen.storyboard */,
+				8372CFBD24BF04A800F070C9 /* SceneDelegate.swift */,
+				8372CFBB24BF04A800F070C9 /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		8372CFAF24BF04A800F070C9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +72,10 @@
 		8372CFBA24BF04A800F070C9 /* Compass */ = {
 			isa = PBXGroup;
 			children = (
-				8372CFBB24BF04A800F070C9 /* AppDelegate.swift */,
-				8372CFBD24BF04A800F070C9 /* SceneDelegate.swift */,
-				8372CFBF24BF04A800F070C9 /* ViewController.swift */,
-				8372CFC124BF04A800F070C9 /* Main.storyboard */,
-				8372CFC424BF04A900F070C9 /* Assets.xcassets */,
-				8372CFC624BF04A900F070C9 /* LaunchScreen.storyboard */,
 				8372CFC924BF04A900F070C9 /* Info.plist */,
+				8372CFC424BF04A900F070C9 /* Assets.xcassets */,
+				1BE1D0A724BF50BC009E2444 /* Support */,
+				1BE1D0A624BF50B0009E2444 /* Scene */,
 			);
 			path = Compass;
 			sourceTree = "<group>";
@@ -127,7 +140,7 @@
 			files = (
 				8372CFC824BF04A900F070C9 /* LaunchScreen.storyboard in Resources */,
 				8372CFC524BF04A900F070C9 /* Assets.xcassets in Resources */,
-				8372CFC324BF04A800F070C9 /* Main.storyboard in Resources */,
+				8372CFC324BF04A800F070C9 /* Compass.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +151,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8372CFC024BF04A800F070C9 /* ViewController.swift in Sources */,
 				8372CFBC24BF04A800F070C9 /* AppDelegate.swift in Sources */,
 				8372CFBE24BF04A800F070C9 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,12 +159,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8372CFC124BF04A800F070C9 /* Main.storyboard */ = {
+		8372CFC124BF04A800F070C9 /* Compass.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8372CFC224BF04A800F070C9 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Compass.storyboard;
 			sourceTree = "<group>";
 		};
 		8372CFC624BF04A900F070C9 /* LaunchScreen.storyboard */ = {
@@ -293,7 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mimosa.Compass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mimosa.Compass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
